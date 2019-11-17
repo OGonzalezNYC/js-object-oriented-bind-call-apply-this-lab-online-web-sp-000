@@ -35,6 +35,6 @@ function setThisWithApply(fn, thisValue, args) {
 
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  let newFunction = Array.prototype.slice(functionToBeCopied);
+  let newFunction = functionToBeCopied;
   return newFunction.bind(thisValue)
 ;}
