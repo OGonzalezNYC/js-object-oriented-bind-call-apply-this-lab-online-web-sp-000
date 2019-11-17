@@ -18,11 +18,11 @@ function setThisWithApply(fn, thisValue, args) {
 
 
 
-function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  let newFunction = functionToBeCopied;
-  return newFunction.bind(thisValue);
-}
-
 // function returnNewFunctionOf(functionToBeCopied, thisValue) {
-//   return functionToBeCopied.bind(thisValue);
+//   let newFunction = functionToBeCopied;
+//   return newFunction.bind(thisValue);
 // }
+
+function returnNewFunctionOf(functionToBeCopied, thisValue) {
+  return functionToBeCopied.bind(thisValue);
+}
