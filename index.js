@@ -1,12 +1,5 @@
 //Your code here
 
-
-
-
-function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  return functionToBeCopied.bind(thisValue);
-}
-
 function justInvoke(fn) {
   return fn();
 }
@@ -27,5 +20,9 @@ function setThisWithApply(fn, thisValue, args) {
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
   let newFunction = functionToBeCopied;
-  return newFunction.bind(thisValue)
-;}
+  return newFunction.bind(thisValue);
+}
+
+function returnNewFunctionOf(functionToBeCopied, thisValue) {
+  return functionToBeCopied.bind(thisValue);
+}
