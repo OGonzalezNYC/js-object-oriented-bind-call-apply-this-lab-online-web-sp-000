@@ -23,6 +23,6 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
   return newFunction.bind(thisValue);
 }
 
-function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  return functionToBeCopied.bind(thisValue);
-}
+// function returnNewFunctionOf(functionToBeCopied, thisValue) {
+//   return functionToBeCopied.bind(thisValue);
+// }
